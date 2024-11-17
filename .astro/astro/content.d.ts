@@ -140,7 +140,23 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"repos": {
+		"abouts": {
+"aboutme.md": {
+	id: "aboutme.md";
+  slug: "aboutme";
+  body: string;
+  collection: "abouts";
+  data: InferEntrySchema<"abouts">
+} & { render(): Render[".md"] };
+"thingsIlike.md": {
+	id: "thingsIlike.md";
+  slug: "thingsilike";
+  body: string;
+  collection: "abouts";
+  data: InferEntrySchema<"abouts">
+} & { render(): Render[".md"] };
+};
+"repos": {
 "PairSearchGame.md": {
 	id: "PairSearchGame.md";
   slug: "pairsearchgame";

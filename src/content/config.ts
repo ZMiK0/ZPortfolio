@@ -7,4 +7,10 @@ const repos = defineCollection({
     }),
 });
 
-export const collections = { repos }
+const abouts = defineCollection({
+    schema: z.object({
+        title: z.string()
+    }),
+});
+
+export const collections = { repos, abouts }
