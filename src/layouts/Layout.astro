@@ -18,9 +18,11 @@ import Navbar from '../components/Navbar.astro';
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body class="justify-center grid grid-cols-1 bg-gradient-to-b from-neutral-200 to-orange-50 bg-fixed font-mono">
+    <body class="justify-center grid grid-cols-1 bg-gradient-to-b dark:bg-gradient-to-b from-neutral-200 dark:from-slate-800 to-orange-50 dark:to-neutral-800 bg-fixed font-mono dark:text-neutral-50">
         <Header />
-		<Navbar />
-        <slot />
+        <div class="xl:flex">
+            <Navbar />
+            <slot />
+        </div>
     </body>
 </html>
