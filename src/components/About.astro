@@ -1,28 +1,28 @@
 ---
+import { render } from 'astro/compiler-runtime';
 import { getCollection } from 'astro:content';
-
-// Obtener los elementos de la colección 'abouts' antes de la renderización
 const abouts = await getCollection("abouts");
-const aboutItems = await Promise.all(abouts.map(async (about) => {
-  const { slug, data } = about;
-  const { title } = data;
-
-  // Usar render() para obtener el contenido de cada entrada
-  const { Content } = await about.render();
-
-  return { title, Content };
-}))
-
-
 ---
 
+
 <div class="xl:flex xl:flex-col xl:gap-2 xl:mx-24 xl:w-6/6">
-  {aboutItems.map(({ title, Content }) => (
-    <div class="border-2 border-neutral-900 dark:border-neutral-50 mx-auto my-6 px-6 py-2 rounded-xl w-10/12">
-      <h1 class="py-4 font-bold text-2xl">{title}</h1>
-      <p class="inline-flex break-words">
-        <Content />
-      </p>
-    </div>
-  ))}
+{
+    abouts.map(async (about: { render?: any; slug?: any; data?: any; }) => {
+        const { slug, data } = about;
+        const { title } = data;
+
+        const { Content } = await about.render();
+
+        return(
+                <div class="border-2 border-neutral-900 dark:border-neutral-50 mx-auto my-6 px-6 py-2 rounded-xl w-10/12">
+                    <h1 class="py-4 font-bold text-2xl">
+                        {title}
+                    </h1>
+                    <p class="inline-flex break-words">
+                        <Content />
+                    </p>
+                </div>
+        );
+    })
+}
 </div>
