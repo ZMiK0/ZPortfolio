@@ -5,7 +5,8 @@ export default {
 	theme: {
 		extend: {},
 		fontFamily: {
-			'mono': [ 'JetBrainsMono Nerd Font' ]
+			'mono': [ 'JetBrainsMono Nerd Font' ],
+			jetbrains: [ 'JetBrainsMono Nerd Font ', 'monospace']
 		}
 	},
 	plugins: [],
