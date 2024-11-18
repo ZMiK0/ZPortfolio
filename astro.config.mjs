@@ -5,6 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  base: 'ZPortfolio',
+  site:'https://zmik0.github.io',
+  base: '/ZPortfolio',
   integrations: [tailwind()]
 });
