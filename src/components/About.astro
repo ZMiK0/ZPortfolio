@@ -1,8 +1,10 @@
 ---
 import { render } from 'astro/compiler-runtime';
 import { getCollection } from 'astro:content';
-const abouts = await getCollection("abouts")
+const abouts = await getCollection("abouts");
 ---
+
+
 <div class="xl:flex xl:flex-col xl:gap-2 xl:mx-24 xl:w-6/6">
 {
     abouts.map(async (about: { render?: any; slug?: any; data?: any; }) => {
