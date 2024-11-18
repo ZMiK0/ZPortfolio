@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('ttf'),
+         url('/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
