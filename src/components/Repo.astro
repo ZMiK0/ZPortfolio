@@ -3,7 +3,7 @@ import { render } from 'astro/compiler-runtime';
 import { getCollection } from 'astro:content';
 const repos = await getCollection("repos")
 ---
-<div class="flex flex-col xl:gap-2 xl:grid xl:grid-cols-2 xl:ml-60 xl:w-6/6">
+<div class="flex flex-col xl:grid xl:grid-cols-2 xl:ml-60 xl:w-6/6">
 {
     repos.map(async (repo: { render?: any; slug?: any; data?: any; }) => {
         const { slug, data } = repo;
@@ -13,7 +13,7 @@ const repos = await getCollection("repos")
 
         return(
             <a href={`https://github.com/ZMiK0/${slug}`} target="_blank" class="xl:w-auto transform hover:scale-105">
-                <div class="md:flex border-2 border-neutral-900 dark:border-neutral-50 mx-auto xl:mx-0 my-6 px-6 py-2 rounded-xl w-10/12 h-auto">
+                <div class="md:flex border-2 border-neutral-900 dark:border-neutral-50 shadow-lg shadow-neutral-400 mx-auto xl:mx-0 my-6 px-6 py-2 pb-4 rounded-xl w-10/12 h-auto">
                     <div class="md:w-4/6">
                         <h1 class="py-4 font-bold text-2xl">
                             {title}
@@ -23,7 +23,7 @@ const repos = await getCollection("repos")
                         </p>
                     </div>
                     <div class="md:flex md:items-center md:px-4">
-                        <img src={`/ZPortfolio/${img}`} class="rounded-2xl md:max-w-72 md:max-h-72" alt="">
+                        <img src={`/ZPortfolio/${img}`} class="shadow-none rounded-2xl md:max-w-72 md:max-h-72" alt="">
                     </div>
                 </div>
             </a>
