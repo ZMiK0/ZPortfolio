@@ -178,6 +178,13 @@ declare module 'astro:content' {
   collection: "repos";
   data: InferEntrySchema<"repos">
 } & { render(): Render[".md"] };
+"ZPortfolio.md": {
+	id: "ZPortfolio.md";
+  slug: "zportfolio";
+  body: string;
+  collection: "repos";
+  data: InferEntrySchema<"repos">
+} & { render(): Render[".md"] };
 "theMacHine.md": {
 	id: "theMacHine.md";
   slug: "themachine";

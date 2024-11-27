@@ -12,9 +12,10 @@ const repos = await getCollection("repos")
         const { Content } = await repo.render();
 
         return(
-            <a href={`https://github.com/ZMiK0/${slug}`} target="_blank" class="xl:w-auto transform hover:scale-105">
-                <div class="md:flex border-2 border-neutral-900 dark:border-neutral-50 shadow-lg shadow-neutral-400 mx-auto xl:mx-0 my-6 px-6 py-2 pb-4 rounded-xl w-10/12 h-auto">
-                    <div class="md:w-4/6">
+            
+            <div class="border-2 border-neutral-900 dark:border-neutral-50 shadow-lg shadow-neutral-400 mx-auto xl:mx-0 my-6 rounded-xl w-10/12 h-auto transform hover:scale-105">
+                <a href={`https://github.com/ZMiK0/${slug}`} target="_blank" class="xl:block md:flex">
+                    <div class="px-6 py-4 md:w-4/6 xl:w-auto">
                         <h1 class="py-4 font-bold text-2xl">
                             {title}
                         </h1>
@@ -22,11 +23,12 @@ const repos = await getCollection("repos")
                             <Content />
                         </p>
                     </div>
-                    <div class="md:flex md:items-center md:px-4">
+                    <div class="md:flex md:items-center xl:place-content-center px-6 md:px-4 py-6">
                         <img src={`/ZPortfolio/${img}`} class="shadow-none rounded-2xl md:max-w-72 md:max-h-72" alt="">
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            
         );
     })
 }
