@@ -11,4 +11,6 @@ pnpm-debug.log*
 .env.production
 
 # jetbrains setting folder
-.vscode
+.vscode/
+
+.astro/
