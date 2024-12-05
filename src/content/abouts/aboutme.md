@@ -10,7 +10,7 @@ Right now, to be honest, I’m nothing. I want to study many things and I can’
 
 <br>
 
-Currently, I’m studying a degree in cross-platform application development, where I’ve learned many languages like <span style="color:#324fb8">Python</span>, <span style="color:#b87b32">Java</span> , <span style="color:#ff8c00">HTML</span>, <span style="color:#1e9dd4">CSS</span> (TailwindCSS), <span style="color:#fae900">JS</span> (Astro.js), <span style="color:#c91a37">ORACLE SQL</span>, <span style="color:#367a36">MongoDB</span>, as well as agile methodologies like <span style="font-weight:bold">Scrum</span>.
+Currently, I’m studying a degree in cross-platform application development, where I’ve learned many languages like <span style="color:#458588">Python</span>, <span style="color:#fe8019">Java</span> , <span style="color:#d65d0e">HTML</span>, <span style="color:#83a598">CSS</span> (TailwindCSS), <span style="color:#fabd2f">JS</span> (Astro.js), <span style="color:#fb4934">ORACLE SQL</span>, <span style="color:#8ec07c">MongoDB</span>, as well as agile methodologies like <span style="font-weight:bold">Scrum</span>.
 
 <br>
 
