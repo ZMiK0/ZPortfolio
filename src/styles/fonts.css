@@ -1,17 +1,15 @@
 @font-face {
     font-family: 'JetBrainsMono Nerd Font';
-    src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype'); 
+    src: url('/ZPortfolio/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
-    font-feature-settings: 'zero' on;
   }
 
 @font-face {
-  font-family: 'JetBrainsMono Nerd Font';
-  src: url('/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  font-feature-settings: 'zero' on;
-}
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('/ZPortfolio/fonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+  }
+
+

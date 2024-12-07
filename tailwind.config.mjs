@@ -24,7 +24,7 @@ export default {
 		},
 		
 		fontFamily: {
-			'jetbrains': [ 'JetBrainsMono Nerd Font', 'monospace']
+			'jet': [ '"JetBrainsMono Nerd Font"' ]
 		},
 		
     	
