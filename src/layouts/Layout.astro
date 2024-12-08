@@ -9,6 +9,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar.astro';
 import '../styles/fonts.css'
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -22,9 +23,10 @@ import '../styles/fonts.css'
     </head>
     <body class="justify-center grid grid-cols-1 to-gruv-bg-2 dark:to-gruv-bg-2-dark bg-gradient-to-b dark:bg-gradient-to-b from-gruv-bg-1 dark:from-gruv-bg-1-dark bg-fixed font-jet text-gruv-bg-1-dark dark:text-gruv-bg-1">
         <Header />
-        <div class="xl:flex">
+        <div class="xl:flex min-h-[65vh]">
             <Navbar titleN={title}> </Navbar>
             <slot />
         </div>
+        <Footer />
     </body>
 </html>
