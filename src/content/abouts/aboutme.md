@@ -14,7 +14,7 @@ Currently, I’m studying a degree in cross-platform application development, wh
 
 <br>
 
-I also got experience with the Google Suite in high school and have a solid understanding of Linux. I’ve been using it as my daily driver for over a year and learning a lot about how it works.
+I have extensive experience with the Google Suite as I've been using it since high school as well as a solid understanding of Linux as it has been my daily driver for over a year.
 
 <br>
 
