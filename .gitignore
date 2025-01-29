@@ -14,3 +14,7 @@ pnpm-debug.log*
 .vscode/
 
 .astro/
+
+node_modules/
+
+.DS_Store
